@@ -14,7 +14,7 @@ ticker, company_name, report_year, report_date, product_name, capacity, capacity
 
 ## 推荐开源流程
 
-1. 用 [AKShare](https://akshare.akfamily.xyz/) 的巨潮资讯公告接口获取年报元数据和公告链接。
+1. 用 [AKShare](https://akshare.akfamily.xyz/) 的巨潮资讯公告接口获取最新已披露年报元数据和公告链接。
 2. 下载年报 PDF。
 3. 用 [pdfplumber](https://github.com/jsvine/pdfplumber) 或 [Camelot](https://camelot-py.readthedocs.io/en/master/) 抽取包含“产能”“万吨/年”“设计产能”等关键词的页面或表格。
 4. 人工复核产品口径，写入 `data/raw/product_capacity.csv`。
@@ -26,12 +26,25 @@ ticker, company_name, report_year, report_date, product_name, capacity, capacity
 
 ```bash
 pip install -r requirements-data.txt
-python scripts/fetch_cninfo_reports.py --start-date 20200101 --end-date 20251231 --category 年报
+python scripts/fetch_cninfo_reports.py
+```
+
+默认逻辑是抓“最新完整年报”。截至 2026-06-08，脚本默认目标是 2025 年年报，查询窗口为 2026-01-01 至 2026-06-08，并且每家公司只保留最新且最像年报全文的一条公告。若需要保留窗口内全部年报、摘要、更正等公告，可加：
+
+```bash
+python scripts/fetch_cninfo_reports.py --keep-all
+```
+
+如需指定报告期，例如强制抓 2024 年年报，可以写：
+
+```bash
+python scripts/fetch_cninfo_reports.py --report-year 2024 --start-date 20250101 --end-date 20251231
 ```
 
 抽取年报 PDF 中的产能相关片段：
 
 ```bash
+python scripts/download_cninfo_pdfs.py --output-dir data/raw/reports/2025
 python scripts/extract_capacity_snippets.py --pdf-dir data/raw/reports
 ```
 

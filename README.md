@@ -232,12 +232,15 @@ pip install -r requirements-data.txt
 抓取巨潮资讯年报公告元数据：
 
 ```bash
-python scripts/fetch_cninfo_reports.py --start-date 20200101 --end-date 20251231 --category 年报
+python scripts/fetch_cninfo_reports.py
 ```
+
+默认抓最新已披露完整年报。截至 2026-06-08，默认目标为 2025 年年报，查询窗口为 2026-01-01 至 2026-06-08，并默认每家公司只保留一条最像年报全文的公告。
 
 从年报 PDF 中抽取产能相关候选片段：
 
 ```bash
+python scripts/download_cninfo_pdfs.py --output-dir data/raw/reports/2025
 python scripts/extract_capacity_snippets.py --pdf-dir data/raw/reports
 ```
 
