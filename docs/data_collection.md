@@ -45,14 +45,18 @@ python scripts/fetch_cninfo_reports.py --report-year 2024 --start-date 20250101 
 
 ```bash
 python scripts/download_cninfo_pdfs.py --output-dir data/raw/reports/2025
+python scripts/export_report_text_pages.py --pdf-dir data/raw/reports/2025 --output data/raw/report_text_pages_2025.csv
 python scripts/extract_capacity_snippets.py --pdf-dir data/raw/reports/2025 --output data/raw/capacity_snippets_2025.csv
 python scripts/parse_capacity_candidates.py
 python scripts/build_product_capacity_review_pack.py
 ```
 
-上述流程会生成五类复核材料：
+`export_report_text_pages.py` 的设计参考了 [Annual-report-to-MDA-txt](https://github.com/Xingyixxxx/Annual-report-to-MDA-txt) 的处理思路：先用 `pdfplumber` 将年报逐页转成可检索文本，并保留真实 PDF 页码，后续再围绕产能关键词做定位和人工复核。本项目没有直接复制其代码，也不依赖 LLM/OCR 兜底作为默认流程。
+
+上述流程会生成多类复核材料：
 
 ```text
+data/raw/report_text_pages_2025.csv
 data/raw/capacity_candidates_2025.csv
 data/raw/capacity_candidate_summary_2025.csv
 data/raw/product_capacity_review_template_2025.csv
@@ -60,6 +64,7 @@ data/raw/product_capacity_review_queue_2025.csv
 data/raw/product_capacity_draft_2025.csv
 ```
 
+- `report_text_pages_2025.csv`：年报逐页文本，保留页码，方便追溯证据。
 - `capacity_candidates_2025.csv`：自动抽取的候选明细，包含页码、产品、数字、单位、上下文和置信度。
 - `capacity_candidate_summary_2025.csv`：按公司和产品汇总后的候选摘要。
 - `product_capacity_review_template_2025.csv`：按公司和产品汇总的人工复核模板。
@@ -71,7 +76,11 @@ data/raw/product_capacity_draft_2025.csv
 ```text
 data/review/product_capacity_review_queue_2025.csv
 data/review/product_capacity_draft_2025.csv
+data/review/latest_product_capacity_2025.csv
+data/review/latest_product_capacity_2025.md
 ```
+
+其中 `latest_product_capacity_2025` 是在自动候选基础上人工整理的确认口径审查稿，优先采用公司自身披露的“设计产能”“现有产能”“产能与开工情况”，并剔除行业产能、产销量、资源储量和在建工程金额等不适合直接作为产品产能的口径。
 
 `product_capacity_review_queue_2025.csv` 中的 `review_status` 说明：
 

@@ -260,6 +260,8 @@ data/raw/product_capacity_draft_2025.csv
 ```text
 data/review/product_capacity_review_queue_2025.csv
 data/review/product_capacity_draft_2025.csv
+data/review/latest_product_capacity_2025.csv
+data/review/latest_product_capacity_2025.md
 ```
 
 ## 12. 开源协作
