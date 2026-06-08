@@ -9,6 +9,8 @@ REQUIRED_DIRS = [
     "data/processed",
     "data/sample",
     "config",
+    "docs",
+    "scripts",
     "notebooks",
     "outputs/figures",
     "outputs/tables",

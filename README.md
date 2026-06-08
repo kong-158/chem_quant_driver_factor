@@ -14,11 +14,12 @@
 ## 2. 研究逻辑
 
 1. 为每家公司配置一个或多个化工品 driver，并设置权重。
-2. 计算 driver 过去 20 日、60 日动量。
-3. 计算股票自身过去 20 日、60 日动量。
-4. 构造 driver-stock gap：`driver_momentum - stock_momentum`。
-5. 用 t 日因子预测 t 日之后 20 或 60 个交易日收益。
-6. 用 Rank IC 和月频分组回测检验因子有效性。
+2. 如果存在产品产能数据，则优先用产能占比生成 point-in-time driver 权重。
+3. 计算 driver 过去 20 日、60 日动量。
+4. 计算股票自身过去 20 日、60 日动量。
+5. 构造 driver-stock gap：`driver_momentum - stock_momentum`。
+6. 用 t 日因子预测 t 日之后 20 或 60 个交易日收益。
+7. 用 Rank IC 和月频分组回测检验因子有效性。
 
 ## 3. 数据结构
 
@@ -66,6 +67,32 @@ config/driver_mapping.csv
 ```text
 ticker,company_name,sub_industry,driver_name,driver_weight
 ```
+
+如果希望用年报披露的产品产能自动生成权重，可以提供：
+
+```text
+data/raw/product_capacity.csv
+```
+
+字段：
+
+```text
+ticker,company_name,sub_industry,report_year,report_date,product_name,capacity,capacity_unit,source_type,source_url,note
+```
+
+产品与价格 driver 的映射文件：
+
+```text
+config/product_driver_map.csv
+```
+
+字段：
+
+```text
+product_name,driver_name,driver_direction,driver_share,exposure_type
+```
+
+系统会优先使用 `product_capacity.csv` 生成产能权重，并以 `report_date` 作为生效日，避免在年报披露日前使用未来产能信息。没有产能文件时，会退回 `config/driver_mapping.csv` 的人工权重。
 
 ## 4. 因子定义
 
@@ -159,6 +186,7 @@ outputs/figures/drawdown.png
 
 ```text
 data/processed/factor_dataset.csv
+data/processed/driver_mapping_effective.csv
 ```
 
 ## 9. 目录说明
@@ -179,14 +207,41 @@ quant_driver_factor/
 ## 10. 后续扩展方向
 
 1. 替换 sample 数据为真实行情和化工品价格数据。
-2. 增加行业中性、市值中性处理。
-3. 增加交易成本和换手率。
-4. 增加更多子行业和更多 driver。
-5. 对比股价动量因子，检验 driver 因子的增量效果。
-6. 增加滚动窗口检验，观察因子稳定性。
-7. 增加机器学习模型，但第一版暂不实现。
+2. 用年报、官网和公告持续完善 `product_capacity.csv`。
+3. 增加行业中性、市值中性处理。
+4. 增加交易成本和换手率。
+5. 增加更多子行业和更多 driver。
+6. 对比股价动量因子，检验 driver 因子的增量效果。
+7. 增加滚动窗口检验，观察因子稳定性。
+8. 增加机器学习模型，但第一版暂不实现。
 
-## 11. 开源协作
+## 11. 数据采集
+
+本项目预留了年报/公告采集与产能提取的轻量入口，详见：
+
+```text
+docs/data_collection.md
+```
+
+可选依赖：
+
+```bash
+pip install -r requirements-data.txt
+```
+
+抓取巨潮资讯年报公告元数据：
+
+```bash
+python scripts/fetch_cninfo_reports.py --start-date 20200101 --end-date 20251231 --category 年报
+```
+
+从年报 PDF 中抽取产能相关候选片段：
+
+```bash
+python scripts/extract_capacity_snippets.py --pdf-dir data/raw/reports
+```
+
+## 12. 开源协作
 
 本项目使用 MIT License。欢迎通过 issue 或 pull request 贡献：
 

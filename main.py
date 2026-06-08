@@ -22,6 +22,9 @@ def main() -> None:
     stock_prices, driver_prices, mapping, universe = load_all_data(project_root)
     print(f"Loaded stock prices: {len(stock_prices):,} rows, universe: {len(universe)} stocks")
     print(f"Loaded driver prices: {len(driver_prices):,} rows, drivers: {driver_prices['driver_name'].nunique()}")
+    mapping_source = ",".join(sorted(mapping["weight_source"].dropna().unique())) if "weight_source" in mapping else "manual"
+    print(f"Loaded driver mapping: {len(mapping):,} rows, source: {mapping_source}")
+    save_table(mapping, project_root / "data" / "processed" / "driver_mapping_effective.csv")
 
     factors = build_factors(stock_prices, driver_prices, mapping, windows=(20, 60))
     forward_returns = compute_forward_returns(stock_prices, horizons=(20, 60))

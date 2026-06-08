@@ -22,7 +22,22 @@ def build_company_driver_momentum(
     driver_momentum = compute_driver_momentum(driver_prices, windows=windows)
     mom_cols = [f"driver_mom_{window}d" for window in windows]
 
+    mapping = mapping.copy()
+    if "effective_date" in mapping.columns:
+        mapping["effective_date"] = pd.to_datetime(mapping["effective_date"])
+    if "end_date" in mapping.columns:
+        mapping["end_date"] = pd.to_datetime(mapping["end_date"])
+
     merged = driver_momentum.merge(mapping, on="driver_name", how="inner")
+    if "effective_date" in merged.columns:
+        # 产能权重只能在年报披露日之后使用，避免 look-ahead bias。
+        valid_start = merged["date"] >= merged["effective_date"]
+        if "end_date" in merged.columns:
+            valid_end = merged["end_date"].isna() | (merged["date"] < merged["end_date"])
+        else:
+            valid_end = True
+        merged = merged[valid_start & valid_end].copy()
+
     weighted_cols = []
 
     for col in mom_cols:
