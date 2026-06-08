@@ -1,0 +1,66 @@
+driver_name,source_type,source_symbol,source_name,source_status,price_field,unit,is_active,priority,notes
+ADC发泡剂,manual_required,,ADC发泡剂,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+DMF,manual_required,,DMF,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+DNT,manual_required,,DNT,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+EVA,manual_required,,EVA,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+MDI,manual_required,,MDI,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+PTA,akshare_futures_spot,TA,PTA,exact,spot_price,元/吨,1,1,"AkShare futures_spot_price_daily, source 100ppi"
+PTFE,manual_required,,PTFE,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+PVC,akshare_futures_spot,V,PVC,exact,spot_price,元/吨,1,1,"AkShare futures_spot_price_daily, source 100ppi"
+PX,akshare_futures_spot,PX,PX,exact,spot_price,元/吨,1,1,"AkShare futures_spot_price_daily, source 100ppi"
+R125,manual_required,,R125,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+R134a,manual_required,,R134a,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+R32,manual_required,,R32,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+TDI,manual_required,,TDI,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+三氯乙烯,manual_required,,三氯乙烯,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+六氟磷酸锂,manual_required,,六氟磷酸锂,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+冰晶石,manual_required,,冰晶石,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+原盐,manual_required,,原盐,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+双氧水,manual_required,,双氧水,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+吡啶,manual_required,,吡啶,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+含氟聚合物,manual_required,,含氟聚合物,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+复合肥,manual_required,,复合肥,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+多晶硅,akshare_futures_spot,PS,多晶硅,exact,spot_price,元/吨,1,1,"AkShare futures_spot_price_daily, source 100ppi"
+小苏打,manual_required,,小苏打,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+尿素,akshare_futures_spot,UR,尿素,exact,spot_price,元/吨,1,1,"AkShare futures_spot_price_daily, source 100ppi"
+工业硅,akshare_futures_spot,SI,工业硅,exact,spot_price,元/吨,1,1,"AkShare futures_spot_price_daily, source 100ppi"
+己内酰胺,manual_required,,己内酰胺,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+无水氟化铝,manual_required,,无水氟化铝,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+有机硅DMC,akshare_futures_spot,SI,工业硅,upstream_proxy,spot_price,元/吨,0,5,工业硅是有机硅上游，不等同DMC价格；默认不启用
+氢氟酸,manual_required,,氢氟酸,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+涤纶长丝,akshare_futures_spot,PF,短纤,proxy,spot_price,元/吨,0,5,PF是聚酯短纤，不是涤纶长丝；可作弱代理，默认不启用
+液氨,manual_required,,液氨,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+溴素,manual_required,,溴素,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+炼化价差,synthetic_required,,炼化价差,synthetic_required,,,0,5,需用原油/石脑油/PX/成品油等组合计算，当前不自动拉取
+烧碱,akshare_futures_spot,SH,烧碱,exact,spot_price,元/吨,1,1,"AkShare futures_spot_price_daily, source 100ppi"
+焦炭,akshare_futures_spot,J,焦炭,exact,spot_price,元/吨,1,1,"AkShare futures_spot_price_daily, source 100ppi"
+煤炭,manual_required,,煤炭,manual_required,,元/吨,0,5,需另接动力煤/焦煤或煤价指数，当前不自动拉取
+环氧丙烷,manual_required,,环氧丙烷,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+环氧氯丙烷,manual_required,,环氧氯丙烷,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+甲烷氯化物,manual_required,,甲烷氯化物,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+甲醇,akshare_futures_spot,MA,甲醇,exact,spot_price,元/吨,1,1,"AkShare futures_spot_price_daily, source 100ppi"
+电子特气,manual_required,,电子特气,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+电石,manual_required,,电石,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+硅铁,akshare_futures_spot,SF,硅铁,exact,spot_price,元/吨,1,1,"AkShare futures_spot_price_daily, source 100ppi"
+磷矿石,manual_required,,磷矿石,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+磷肥,manual_required,,磷肥,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+磷酸一铵,manual_required,,磷酸一铵,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+磷酸二氢钙,manual_required,,磷酸二氢钙,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+磷酸二铵,manual_required,,磷酸二铵,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+磷酸铁,manual_required,,磷酸铁,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+粘胶短纤,akshare_futures_spot,PF,短纤,proxy,spot_price,元/吨,0,5,PF是聚酯短纤，不是粘胶短纤；默认不启用
+纯碱,akshare_futures_spot,SA,纯碱,exact,spot_price,元/吨,1,1,"AkShare futures_spot_price_daily, source 100ppi"
+聚丙烯,akshare_futures_spot,PP,聚丙烯,exact,spot_price,元/吨,1,1,"AkShare futures_spot_price_daily, source 100ppi"
+聚乙烯,akshare_futures_spot,L,聚乙烯,exact,spot_price,元/吨,1,1,"AkShare futures_spot_price_daily, source 100ppi"
+聚氨酯材料,manual_required,,聚氨酯材料,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+苯胺,manual_required,,苯胺,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+草甘膦,manual_required,,草甘膦,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+草铵膦,manual_required,,草铵膦,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+菊酯,manual_required,,菊酯,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+萤石,manual_required,,萤石,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+醋酸,manual_required,,醋酸,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+醋酸乙烯,manual_required,,醋酸乙烯,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+钛白粉,manual_required,,钛白粉,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+钛精矿,manual_required,,钛精矿,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+麦草畏,manual_required,,麦草畏,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV
+黄磷,manual_required,,黄磷,manual_required,,元/吨,0,5,AkShare期现接口暂未覆盖；可后续接生意社网页、百川/卓创/隆众或手工CSV

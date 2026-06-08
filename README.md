@@ -238,6 +238,7 @@ quant_driver_factor/
 ```text
 docs/data_collection.md
 docs/universe_selection.md
+docs/driver_price_data.md
 ```
 
 可选依赖：
@@ -290,6 +291,21 @@ data/review/heavy_chemical_universe_candidates.md
 python scripts/build_chain_universe_candidates.py \
   --chain-kg-dir /path/to/ChainKnowledgeGraph \
   --output data/review/chain_kg_heavy_chemical_screen.csv
+```
+
+如需拉取 ABC 池相关 driver 的生意社/100ppi 历史价格，可运行：
+
+```bash
+python scripts/fetch_driver_prices_akshare.py \
+  --lookback-days 180 \
+  --output data/raw/driver_prices_akshare.csv
+```
+
+价格源覆盖说明见：
+
+```text
+config/driver_price_sources.csv
+data/review/abc_driver_price_source_coverage.csv
 ```
 
 ## 12. 开源协作
