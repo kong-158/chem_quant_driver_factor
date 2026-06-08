@@ -241,7 +241,8 @@ python scripts/fetch_cninfo_reports.py
 
 ```bash
 python scripts/download_cninfo_pdfs.py --output-dir data/raw/reports/2025
-python scripts/extract_capacity_snippets.py --pdf-dir data/raw/reports
+python scripts/extract_capacity_snippets.py --pdf-dir data/raw/reports/2025 --output data/raw/capacity_snippets_2025.csv
+python scripts/parse_capacity_candidates.py
 ```
 
 ## 12. 开源协作

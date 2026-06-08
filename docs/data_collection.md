@@ -45,8 +45,21 @@ python scripts/fetch_cninfo_reports.py --report-year 2024 --start-date 20250101 
 
 ```bash
 python scripts/download_cninfo_pdfs.py --output-dir data/raw/reports/2025
-python scripts/extract_capacity_snippets.py --pdf-dir data/raw/reports
+python scripts/extract_capacity_snippets.py --pdf-dir data/raw/reports/2025 --output data/raw/capacity_snippets_2025.csv
+python scripts/parse_capacity_candidates.py
 ```
+
+上述流程会生成三类复核材料：
+
+```text
+data/raw/capacity_candidates_2025.csv
+data/raw/capacity_candidate_summary_2025.csv
+data/raw/product_capacity_review_template_2025.csv
+```
+
+- `capacity_candidates_2025.csv`：自动抽取的候选明细，包含页码、产品、数字、单位、上下文和置信度。
+- `capacity_candidate_summary_2025.csv`：按公司和产品汇总后的候选摘要。
+- `product_capacity_review_template_2025.csv`：人工复核模板。复核后可整理为 `data/raw/product_capacity.csv`。
 
 ## product_capacity.csv 格式
 
