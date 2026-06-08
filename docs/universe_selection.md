@@ -55,6 +55,7 @@ python scripts/build_chain_universe_candidates.py \
 
 ```text
 config/chemical_chain_edges.csv
+config/universe_pool_static.csv
 config/universe_heavy_chemical_candidates.csv
 config/universe_expanded_heavy_chemical.csv
 config/driver_mapping_heavy_chemical_candidates.csv
@@ -66,12 +67,40 @@ data/review/heavy_chemical_universe_candidates.md
 其中：
 
 - `chemical_chain_edges.csv`：干净的化工产业链边，例如 `PX -> PTA -> 涤纶长丝`、`萤石 -> 氢氟酸 -> R32/R125/R134a`。
+- `universe_pool_static.csv`：静态 B/C 池配置，B 池为核心研究覆盖池，C 池为观察池。
 - `universe_heavy_chemical_candidates.csv`：手工清洗后的 26 个重资产化工候选标的。
 - `universe_expanded_heavy_chemical.csv`：starter universe 15 个标的 + 26 个候选标的，共 41 个。
 - `driver_mapping_heavy_chemical_candidates.csv`：候选标的的初版 driver 权重，权重均已归一化为 1。
 - `data/review/*.md/csv`：便于在 GitHub 页面直接审查的轻量快照。
 
-## 4. 当前候选池口径
+## 4. A/B/C 股票池逻辑
+
+当前项目把股票池拆成三层：
+
+- B 池：核心研究覆盖池。包括 starter universe 和产品链条更清楚、重资产属性更强的候选标的。
+- C 池：观察池。包括业务更杂、产品技术属性更强、历史数据噪声较大或仍需年报产能进一步确认的标的。
+- A 池：动态预计持股池。不手工维护，而是在每个月末从 B 池里按 `driver_stock_gap_20d` 选出 Top 5。
+
+A 池默认筛选规则：
+
+```text
+source_pool=B
+factor=driver_stock_gap_20d
+sort=desc
+top_n=5
+driver_mom_20d >= 0
+```
+
+这个规则对应的研究含义是：产品端过去 20 个交易日已经上涨或不弱，但股票 20 日动量还没有充分反应，导致 `driver_mom_20d - stock_mom_20d` 较大。运行 `python main.py` 后会生成：
+
+```text
+outputs/tables/dynamic_a_pool.csv
+outputs/tables/latest_a_pool.csv
+outputs/tables/a_pool_returns.csv
+outputs/tables/a_pool_performance.csv
+```
+
+## 5. 当前候选池口径
 
 优先纳入的 A 类候选主要满足：
 
@@ -90,7 +119,7 @@ data/review/heavy_chemical_universe_candidates.md
 
 B 类候选不是排除，而是提醒需要更多年报拆分或业务纯度确认，例如多氟多、昊华科技、君正集团、新洋丰、六国化工、金浦钛业、安纳达、惠云钛业、鲁北化工等。
 
-## 5. 后续建议
+## 6. 后续建议
 
 下一步不要急着把候选表直接替换 `config/universe.csv`。建议流程是：
 
@@ -98,4 +127,5 @@ B 类候选不是排除，而是提醒需要更多年报拆分或业务纯度确
 2. 用现有产能提取脚本抽取产品产能、装置产能和收入分部。
 3. 人工复核 A 类候选的产能权重，先并入 10-15 个最干净的标的。
 4. 将确认后的权重写入正式 `config/driver_mapping.csv` 或 `data/raw/product_capacity.csv`。
-5. 再运行 `python main.py` 检验扩展股票池后的 IC 和分组回测是否稳定。
+5. 将通过复核的标的调整到 `config/universe_pool_static.csv` 的 B 池，其余保持在 C 池观察。
+6. 再运行 `python main.py` 检验动态 A 池、IC 和分组回测是否稳定。

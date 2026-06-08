@@ -1,9 +1,12 @@
 from pathlib import Path
 
-from src.backtester import calculate_top_bottom_performance, run_monthly_group_backtest
+import pandas as pd
+
+from src.backtester import calculate_top_bottom_performance, run_monthly_group_backtest, run_selected_pool_backtest
 from src.data_loader import load_all_data
 from src.factor_builder import build_factors
-from src.metrics import calculate_rank_ic_batch, summarize_ic
+from src.metrics import calculate_rank_ic_batch, performance_stats, summarize_ic
+from src.pool_selector import build_dynamic_a_pool, get_latest_a_pool, read_static_pool
 from src.return_builder import compute_forward_returns, merge_factors_and_returns
 from src.utils import ensure_directories, save_table
 from src.visualization import (
@@ -31,6 +34,31 @@ def main() -> None:
     factor_dataset = merge_factors_and_returns(factors, forward_returns)
 
     save_table(factor_dataset, project_root / "data" / "processed" / "factor_dataset.csv")
+
+    pool_config_path = project_root / "config" / "universe_pool_static.csv"
+    if pool_config_path.exists():
+        static_pool = read_static_pool(pool_config_path)
+        dynamic_a_pool = build_dynamic_a_pool(
+            factor_dataset,
+            static_pool,
+            factor_col="driver_stock_gap_20d",
+            driver_mom_col="driver_mom_20d",
+            stock_mom_col="stock_mom_20d",
+            eligible_pools=("B",),
+            top_n=5,
+            min_driver_mom=0.0,
+        )
+        latest_a_pool = get_latest_a_pool(dynamic_a_pool)
+        a_pool_returns = run_selected_pool_backtest(dynamic_a_pool, stock_prices, portfolio_name="A_pool")
+        a_pool_performance = pd.DataFrame([performance_stats(a_pool_returns["period_ret"], periods_per_year=12)])
+        a_pool_performance.insert(0, "portfolio", "A_pool")
+        a_pool_performance.insert(1, "selection_rule", "monthly top 5 driver_stock_gap_20d from B pool")
+
+        save_table(dynamic_a_pool, project_root / "outputs" / "tables" / "dynamic_a_pool.csv")
+        save_table(latest_a_pool, project_root / "outputs" / "tables" / "latest_a_pool.csv")
+        save_table(a_pool_returns, project_root / "outputs" / "tables" / "a_pool_returns.csv")
+        save_table(a_pool_performance, project_root / "outputs" / "tables" / "a_pool_performance.csv")
+        print(f"Built dynamic A pool: {len(dynamic_a_pool):,} rows, latest holdings: {len(latest_a_pool)}")
 
     factor_cols = [
         "driver_mom_20d",

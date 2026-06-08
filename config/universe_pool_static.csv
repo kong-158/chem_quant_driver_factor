@@ -1,0 +1,42 @@
+ticker,company_name,sub_industry,pool_tier,is_active,pool_reason,source,review_status
+000301.SZ,东方盛虹,炼油化工,B,1,炼化和化纤资产链条较完整，适合观察原料到产品景气传导。,heavy_chemical_candidate,active_research_pool
+000683.SZ,远兴能源,纯碱,B,1,纯碱和尿素产能属性强，适合做产品景气度驱动。,heavy_chemical_candidate,active_research_pool
+000703.SZ,恒逸石化,炼油化工,B,1,PTA/涤纶暴露清晰，适合与桐昆、新凤鸣构成化纤链横截面。,heavy_chemical_candidate,active_research_pool
+000822.SZ,山东海化,纯碱,B,1,纯碱暴露高，产品价格和利润弹性较直观。,heavy_chemical_candidate,active_research_pool
+002493.SZ,荣盛石化,炼油化工,B,1,炼化和 PTA 资产重，ChainKG 主营产品中 PTA 权重靠前。,heavy_chemical_candidate,active_research_pool
+002895.SZ,川恒股份,磷化工,B,1,磷矿和磷酸盐产品明确，适合与兴发、云天化对照。,heavy_chemical_candidate,active_research_pool
+600075.SH,新疆天业,氯碱,B,1,PVC/烧碱重资产属性明显，适合与中泰化学、氯碱化工对比。,heavy_chemical_candidate,active_research_pool
+600230.SH,沧州大化,聚氨酯,B,1,TDI 景气度敏感，和万华的聚氨酯链形成互补。,heavy_chemical_candidate,active_research_pool
+600346.SH,恒力石化,炼油化工,B,1,产业链长、装置重、PTA/聚酯/PX价格弹性强，适合作为中游石化价格驱动标的。,heavy_chemical_candidate,active_research_pool
+600409.SH,三友化工,纯碱/粘胶/氯碱,B,1,多产品重资产平台，适合检验多 driver 加权。,heavy_chemical_candidate,active_research_pool
+600596.SH,新安股份,有机硅/农药,B,1,有机硅和草甘膦双链条，适合检验多 driver 增量效果。,heavy_chemical_candidate,active_research_pool
+600618.SH,氯碱化工,氯碱,B,1,氯碱产品集中，适合做单链条价格驱动。,heavy_chemical_candidate,active_research_pool
+600746.SH,江苏索普,醋酸/煤化工,B,1,醋酸链条单一且产能驱动强，适合补齐煤化工中间品。,heavy_chemical_candidate,active_research_pool
+600989.SH,宝丰能源,煤化工,B,1,煤化工资产重，烯烃和煤/焦/甲醇链条价格传导直接。,heavy_chemical_candidate,active_research_pool
+601678.SH,滨化股份,氯碱/环氧丙烷,B,1,环氧丙烷和烧碱价格弹性明确，是氯碱链外的补充。,heavy_chemical_candidate,active_research_pool
+603225.SH,新凤鸣,涤纶,B,1,产品集中在涤纶长丝和 PTA，driver 权重容易做得清晰。,heavy_chemical_candidate,active_research_pool
+603260.SH,合盛硅业,工业硅/有机硅,B,1,硅产业链资产极重，产品价格对利润和股价弹性通常较强。,heavy_chemical_candidate,active_research_pool
+000422.SZ,湖北宜化,煤化工,B,1,starter_universe核心覆盖标的，先放入B池等待动态A池信号筛选,starter_universe,active_research_pool
+000830.SZ,鲁西化工,煤化工,B,1,starter_universe核心覆盖标的，先放入B池等待动态A池信号筛选,starter_universe,active_research_pool
+002092.SZ,中泰化学,氯碱,B,1,starter_universe核心覆盖标的，先放入B池等待动态A池信号筛选,starter_universe,active_research_pool
+002145.SZ,中核钛白,钛白粉,B,1,starter_universe核心覆盖标的，先放入B池等待动态A池信号筛选,starter_universe,active_research_pool
+002258.SZ,利尔化学,农药,B,1,starter_universe核心覆盖标的，先放入B池等待动态A池信号筛选,starter_universe,active_research_pool
+002601.SZ,龙佰集团,钛白粉,B,1,starter_universe核心覆盖标的，先放入B池等待动态A池信号筛选,starter_universe,active_research_pool
+600096.SH,云天化,磷化工,B,1,starter_universe核心覆盖标的，先放入B池等待动态A池信号筛选,starter_universe,active_research_pool
+600141.SH,兴发集团,磷化工,B,1,starter_universe核心覆盖标的，先放入B池等待动态A池信号筛选,starter_universe,active_research_pool
+600160.SH,巨化股份,氟化工,B,1,starter_universe核心覆盖标的，先放入B池等待动态A池信号筛选,starter_universe,active_research_pool
+600309.SH,万华化学,聚氨酯,B,1,starter_universe核心覆盖标的，先放入B池等待动态A池信号筛选,starter_universe,active_research_pool
+600426.SH,华鲁恒升,煤化工,B,1,starter_universe核心覆盖标的，先放入B池等待动态A池信号筛选,starter_universe,active_research_pool
+600486.SH,扬农化工,农药,B,1,starter_universe核心覆盖标的，先放入B池等待动态A池信号筛选,starter_universe,active_research_pool
+601233.SH,桐昆股份,化纤,B,1,starter_universe核心覆盖标的，先放入B池等待动态A池信号筛选,starter_universe,active_research_pool
+603379.SH,三美股份,氟化工,B,1,starter_universe核心覆盖标的，先放入B池等待动态A池信号筛选,starter_universe,active_research_pool
+605020.SH,永和股份,氟化工,B,1,starter_universe核心覆盖标的，先放入B池等待动态A池信号筛选,starter_universe,active_research_pool
+000545.SZ,金浦钛业,钛白粉,C,1,钛白粉暴露清晰，但 ChainKG 存在历史药业产品噪声，必须以最新年报确认。,heavy_chemical_candidate,watchlist_needs_review
+000902.SZ,新洋丰,复合肥,C,1,复合肥终端属性较强，产品价格传导可能慢于上游磷化工。,heavy_chemical_candidate,watchlist_needs_review
+002136.SZ,安纳达,钛白粉,C,1,钛白粉为主，但磷酸铁业务需单独做 driver 拆分。,heavy_chemical_candidate,watchlist_needs_review
+002407.SZ,多氟多,氟化工,C,1,氟化工链条清晰，但新能源材料业务周期需单独拆分。,heavy_chemical_candidate,watchlist_needs_review
+300891.SZ,惠云钛业,钛白粉,C,1,钛白粉纯度较高，但 ChainKG 产品明细缺失，优先下载最新年报补证据。,heavy_chemical_candidate,watchlist_needs_review
+600378.SH,昊华科技,氟化工/高端材料,C,1,产品技术属性更强，重资产价格驱动需要年报进一步确认。,heavy_chemical_candidate,watchlist_needs_review
+600470.SH,六国化工,磷化工,C,1,磷肥链条清晰，但盈利能力和业务杂项需要年报复核。,heavy_chemical_candidate,watchlist_needs_review
+600727.SH,鲁北化工,钛白粉/磷化工,C,1,多产品重资产属性明显，但业务混合度高，适合放入候选而非第一批核心。,heavy_chemical_candidate,watchlist_needs_review
+601216.SH,君正集团,氯碱,C,1,PVC/片碱资产重，但物流和热电等业务需在年报中拆分确认。,heavy_chemical_candidate,watchlist_needs_review

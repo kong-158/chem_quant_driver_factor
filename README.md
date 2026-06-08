@@ -98,12 +98,13 @@ product_name,driver_name,driver_direction,driver_share,exposure_type
 
 ```text
 config/chemical_chain_edges.csv
+config/universe_pool_static.csv
 config/universe_heavy_chemical_candidates.csv
 config/universe_expanded_heavy_chemical.csv
 config/driver_mapping_heavy_chemical_candidates.csv
 ```
 
-这些文件用于审查和扩展，不会自动覆盖当前 MVP 的 `config/universe.csv` 和 `config/driver_mapping.csv`。候选池筛选说明见 `docs/universe_selection.md`。
+其中 `universe_pool_static.csv` 定义静态 B/C 池：B 池是核心研究覆盖池，C 池是观察池；A 池不手工维护，而是在每个调仓日从 B 池中按 driver-stock gap 动态筛选。候选池筛选说明见 `docs/universe_selection.md`。
 
 ## 4. 因子定义
 
@@ -182,6 +183,10 @@ outputs/tables/factor_ic_series.csv
 outputs/tables/factor_ic_summary.csv
 outputs/tables/monthly_group_returns.csv
 outputs/tables/top_bottom_performance.csv
+outputs/tables/dynamic_a_pool.csv
+outputs/tables/latest_a_pool.csv
+outputs/tables/a_pool_returns.csv
+outputs/tables/a_pool_performance.csv
 ```
 
 运行后会生成以下图片：
