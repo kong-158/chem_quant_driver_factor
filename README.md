@@ -94,6 +94,17 @@ product_name,driver_name,driver_direction,driver_share,exposure_type
 
 系统会优先使用 `product_capacity.csv` 生成产能权重，并以 `report_date` 作为生效日，避免在年报披露日前使用未来产能信息。没有产能文件时，会退回 `config/driver_mapping.csv` 的人工权重。
 
+产业链和扩展股票池候选文件：
+
+```text
+config/chemical_chain_edges.csv
+config/universe_heavy_chemical_candidates.csv
+config/universe_expanded_heavy_chemical.csv
+config/driver_mapping_heavy_chemical_candidates.csv
+```
+
+这些文件用于审查和扩展，不会自动覆盖当前 MVP 的 `config/universe.csv` 和 `config/driver_mapping.csv`。候选池筛选说明见 `docs/universe_selection.md`。
+
 ## 4. 因子定义
 
 当前版本实现以下基础因子：
@@ -221,6 +232,7 @@ quant_driver_factor/
 
 ```text
 docs/data_collection.md
+docs/universe_selection.md
 ```
 
 可选依赖：
@@ -262,6 +274,17 @@ data/review/product_capacity_review_queue_2025.csv
 data/review/product_capacity_draft_2025.csv
 data/review/latest_product_capacity_2025.csv
 data/review/latest_product_capacity_2025.md
+data/review/chain_kg_heavy_chemical_screen.csv
+data/review/heavy_chemical_universe_candidates.csv
+data/review/heavy_chemical_universe_candidates.md
+```
+
+如需参考 ChainKnowledgeGraph 做重资产化工股票池筛选，可先 clone 该项目，然后运行：
+
+```bash
+python scripts/build_chain_universe_candidates.py \
+  --chain-kg-dir /path/to/ChainKnowledgeGraph \
+  --output data/review/chain_kg_heavy_chemical_screen.csv
 ```
 
 ## 12. 开源协作

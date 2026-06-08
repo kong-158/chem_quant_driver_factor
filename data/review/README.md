@@ -8,5 +8,10 @@
 - `product_capacity_draft_2025.csv`：从审查队列中筛出的自动草稿，只包含 `review_status=proposed_accept` 的候选。
 - `latest_product_capacity_2025.csv`：在自动候选和年报逐页文本基础上人工整理的最新产品产能审查稿。
 - `latest_product_capacity_2025.md`：上述 CSV 的 Markdown 预览版，方便在 GitHub 页面直接阅读。
+- `chain_kg_heavy_chemical_screen.csv`：参考 ChainKnowledgeGraph 生成的重资产化工公司初筛结果。
+- `heavy_chemical_universe_candidates.csv`：手工清洗后的扩展股票池候选表。
+- `heavy_chemical_universe_candidates.md`：上述候选表的 Markdown 预览版，方便在 GitHub 页面直接阅读。
 
 注意：这些数据来自 2025 年年报文本自动抽取，仍需人工复核后才能整理为正式的 `data/raw/product_capacity.csv`。
+
+扩展股票池候选表来自 ChainKnowledgeGraph 的公司-行业、公司-主营产品关系和人工产业链清洗，不等同于最终投资标的或正式 driver 权重。详细说明见 `docs/universe_selection.md`。

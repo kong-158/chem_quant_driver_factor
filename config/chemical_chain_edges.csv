@@ -1,0 +1,28 @@
+chain_name,from_product,to_product,relation_type,driver_role,notes
+芳烃-聚酯,原油/石脑油,PX,上游原料,cost_to_output,PX是PTA核心原料，上游成本端需要后续用价差处理。
+芳烃-聚酯,PX,PTA,上游原料,cost_to_output,PTA价格通常承接PX成本和供需景气。
+芳烃-聚酯,PTA,涤纶长丝,上游原料,cost_to_output,涤纶长丝价差可由长丝价格、PTA、MEG共同刻画。
+芳烃-聚酯,MEG,涤纶长丝,上游原料,cost_to_output,MEG是聚酯另一核心原料，第一版可先用PTA/PX替代。
+煤化工,煤炭,甲醇,上游原料,cost_to_output,煤制甲醇链条，适合宝丰、远兴等。
+煤化工,甲醇,聚乙烯/聚丙烯,上游原料,cost_to_output,煤制烯烃产品端可跟踪PE/PP价格。
+煤化工,合成氨,尿素,上游原料,cost_to_output,尿素景气可作为煤化工/化肥 driver。
+煤化工,甲醇,醋酸,上游原料,cost_to_output,醋酸链适合江苏索普等。
+氯碱,原盐,烧碱,上游原料,cost_to_output,烧碱与PVC常有联产关系，需结合价差。
+氯碱,电石,PVC,上游原料,cost_to_output,电石法PVC适合中泰化学、新疆天业、君正集团。
+氯碱,乙烯,PVC,上游原料,cost_to_output,乙烯法PVC适合部分沿海氯碱企业。
+氟化工,萤石,氢氟酸,上游原料,cost_to_output,萤石是氟化工上游资源。
+氟化工,氢氟酸,R32,上游原料,cost_to_output,制冷剂产品端价格适合做正向 driver。
+氟化工,氢氟酸,R125,上游原料,cost_to_output,制冷剂产品端价格适合做正向 driver。
+氟化工,氢氟酸,R134a,上游原料,cost_to_output,制冷剂产品端价格适合做正向 driver。
+氟化工,氢氟酸,无水氟化铝,上游原料,cost_to_output,氟盐价格适合多氟多等。
+钛白粉,钛精矿,钛白粉,上游原料,cost_to_output,钛白粉企业需要同时观察钛白粉价格和钛精矿成本。
+磷化工,磷矿石,黄磷,上游原料,cost_to_output,磷矿自给率会影响成本弹性。
+磷化工,磷矿石,磷酸一铵,上游原料,cost_to_output,磷肥产品价差可加入硫磺/合成氨。
+磷化工,磷矿石,磷酸二铵,上游原料,cost_to_output,适合云天化、六国化工等。
+磷化工,黄磷,草甘膦,上游原料,cost_to_output,兴发、新安等农化链条。
+有机硅,工业硅,有机硅DMC,上游原料,cost_to_output,工业硅价格和DMC价差对有机硅企业关键。
+有机硅,有机硅DMC,硅橡胶/硅油,上游原料,cost_to_output,下游加工产品可后续扩展。
+聚氨酯,苯,苯胺,上游原料,cost_to_output,苯胺是MDI成本端之一。
+聚氨酯,苯胺,MDI,上游原料,cost_to_output,MDI/TDI是聚氨酯链核心 driver。
+聚氨酯,甲苯,TDI,上游原料,cost_to_output,TDI适合万华、沧州大化等。
+环氧丙烷,丙烯,环氧丙烷,上游原料,cost_to_output,适合滨化股份等。
