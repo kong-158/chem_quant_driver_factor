@@ -239,6 +239,7 @@ quant_driver_factor/
 docs/data_collection.md
 docs/universe_selection.md
 docs/driver_price_data.md
+docs/inventory_and_web_monitoring.md
 ```
 
 可选依赖：
@@ -307,6 +308,34 @@ python scripts/fetch_driver_prices_akshare.py \
 config/driver_price_sources.csv
 data/review/abc_driver_price_source_coverage.csv
 ```
+
+如需拉取 ABC 池相关 driver 的库存 proxy，可运行：
+
+```bash
+python scripts/fetch_driver_inventory_akshare.py
+```
+
+库存源覆盖说明见：
+
+```text
+config/driver_inventory_sources.csv
+data/review/abc_driver_inventory_source_coverage.csv
+```
+
+如需用虚拟浏览器抓取生意社最新报价，可运行：
+
+```bash
+python -m playwright install chromium
+python scripts/scrape_100ppi_quotes_playwright.py --pages 3
+```
+
+如需每周沉淀行业周报候选链接，可运行：
+
+```bash
+python scripts/search_weekly_reports_playwright.py --max-results 8
+```
+
+网页报价和周报检索说明见 `docs/inventory_and_web_monitoring.md`。这些脚本主要用于补源和监控；进入正式回测前，仍应整理为统一、可复核的结构化历史表。
 
 ## 12. 开源协作
 

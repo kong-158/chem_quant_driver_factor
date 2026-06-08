@@ -1,0 +1,7 @@
+﻿pool_tier,source_status,rows,unique_drivers,unique_tickers,auto_rows
+B,exchange_proxy,44,12,21,44
+B,manual_required,53,37,24,0
+B,proxy,7,2,7,0
+B,upstream_proxy,2,1,2,0
+C,exchange_proxy,5,4,3,5
+C,manual_required,25,18,8,0

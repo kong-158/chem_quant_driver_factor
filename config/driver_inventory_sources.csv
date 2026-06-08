@@ -1,0 +1,66 @@
+driver_name,source_type,source_symbol,source_name,source_status,unit,frequency,is_active,priority,notes
+ADC发泡剂,weekly_report_required,,ADC发泡剂,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+DMF,weekly_report_required,,DMF,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+DNT,weekly_report_required,,DNT,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+EVA,weekly_report_required,,EVA,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+MDI,weekly_report_required,,MDI,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+PTA,akshare_futures_inventory_em,PTA,PTA,exchange_proxy,吨,daily,1,1,东方财富期货库存，交易所仓单/库存 proxy
+PTFE,weekly_report_required,,PTFE,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+PVC,akshare_futures_inventory_em,PVC,PVC,exchange_proxy,吨,daily,1,1,东方财富期货库存，交易所仓单/库存 proxy
+PX,akshare_futures_inventory_em,对二甲苯,对二甲苯,exchange_proxy,吨,daily,1,1,东方财富期货库存，PX交易所库存 proxy
+R125,weekly_report_required,,R125,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+R134a,weekly_report_required,,R134a,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+R32,weekly_report_required,,R32,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+TDI,weekly_report_required,,TDI,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+三氯乙烯,weekly_report_required,,三氯乙烯,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+六氟磷酸锂,weekly_report_required,,六氟磷酸锂,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+冰晶石,weekly_report_required,,冰晶石,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+原盐,weekly_report_required,,原盐,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+双氧水,weekly_report_required,,双氧水,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+吡啶,weekly_report_required,,吡啶,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+含氟聚合物,weekly_report_required,,含氟聚合物,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+复合肥,weekly_report_required,,复合肥,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+多晶硅,akshare_futures_inventory_em,多晶硅,多晶硅,exchange_proxy,吨,daily,1,1,东方财富期货库存，交易所仓单/库存 proxy
+小苏打,weekly_report_required,,小苏打,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+尿素,akshare_futures_inventory_em,尿素,尿素,exchange_proxy,吨,daily,1,1,东方财富期货库存，交易所仓单/库存 proxy
+工业硅,akshare_futures_inventory_em,工业硅,工业硅,exchange_proxy,吨,daily,1,1,东方财富期货库存，交易所仓单/库存 proxy
+己内酰胺,weekly_report_required,,己内酰胺,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+无水氟化铝,weekly_report_required,,无水氟化铝,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+有机硅DMC,akshare_futures_inventory_em,工业硅,工业硅,upstream_proxy,吨,daily,0,5,工业硅库存是上游 proxy，不等同 DMC 库存，默认不启用
+氢氟酸,weekly_report_required,,氢氟酸,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+涤纶长丝,akshare_futures_inventory_em,短纤,短纤,proxy,吨,daily,0,5,短纤库存不是涤纶长丝库存，只作弱代理，默认不启用
+液氨,weekly_report_required,,液氨,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+溴素,weekly_report_required,,溴素,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+炼化价差,weekly_report_required,,炼化价差,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+烧碱,akshare_futures_inventory_em,烧碱,烧碱,exchange_proxy,吨,daily,1,1,东方财富期货库存，交易所仓单/库存 proxy
+焦炭,akshare_futures_inventory_em,焦炭,焦炭,exchange_proxy,吨,daily,1,1,东方财富期货库存，交易所仓单/库存 proxy
+煤炭,weekly_report_required,,煤炭,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+环氧丙烷,weekly_report_required,,环氧丙烷,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+环氧氯丙烷,weekly_report_required,,环氧氯丙烷,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+甲烷氯化物,weekly_report_required,,甲烷氯化物,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+甲醇,akshare_futures_inventory_em,甲醇,甲醇,exchange_proxy,吨,daily,1,1,东方财富期货库存，交易所仓单/库存 proxy
+电子特气,weekly_report_required,,电子特气,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+电石,weekly_report_required,,电石,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+硅铁,akshare_futures_inventory_em,硅铁,硅铁,exchange_proxy,吨,daily,1,1,东方财富期货库存，交易所仓单/库存 proxy
+磷矿石,weekly_report_required,,磷矿石,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+磷肥,weekly_report_required,,磷肥,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+磷酸一铵,weekly_report_required,,磷酸一铵,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+磷酸二氢钙,weekly_report_required,,磷酸二氢钙,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+磷酸二铵,weekly_report_required,,磷酸二铵,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+磷酸铁,weekly_report_required,,磷酸铁,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+粘胶短纤,akshare_futures_inventory_em,短纤,短纤,proxy,吨,daily,0,5,短纤库存不是粘胶短纤库存，只作弱代理，默认不启用
+纯碱,akshare_futures_inventory_em,纯碱,纯碱,exchange_proxy,吨,daily,1,1,东方财富期货库存，交易所仓单/库存 proxy
+聚丙烯,akshare_futures_inventory_em,聚丙烯,聚丙烯,exchange_proxy,吨,daily,1,1,东方财富期货库存，交易所仓单/库存 proxy
+聚乙烯,akshare_futures_inventory_em,塑料,塑料/聚乙烯,exchange_proxy,吨,daily,1,1,东方财富期货库存，L/塑料库存 proxy
+聚氨酯材料,weekly_report_required,,聚氨酯材料,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+苯胺,weekly_report_required,,苯胺,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+草甘膦,weekly_report_required,,草甘膦,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+草铵膦,weekly_report_required,,草铵膦,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+菊酯,weekly_report_required,,菊酯,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+萤石,weekly_report_required,,萤石,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+醋酸,weekly_report_required,,醋酸,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+醋酸乙烯,weekly_report_required,,醋酸乙烯,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+钛白粉,weekly_report_required,,钛白粉,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+钛精矿,weekly_report_required,,钛精矿,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+麦草畏,weekly_report_required,,麦草畏,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+黄磷,weekly_report_required,,黄磷,manual_required,,weekly,0,5,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护

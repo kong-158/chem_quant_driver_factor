@@ -1,0 +1,137 @@
+﻿ticker,company_name,sub_industry,pool_tier,driver_name,driver_weight,source_type,source_symbol,source_name,source_status,frequency,is_inventory_auto_available,unit,notes
+000301.SZ,东方盛虹,炼油化工,B,EVA,0.15,weekly_report_required,,EVA,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+000301.SZ,东方盛虹,炼油化工,B,PTA,0.25,akshare_futures_inventory_em,PTA,PTA,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+000301.SZ,东方盛虹,炼油化工,B,PX,0.2,akshare_futures_inventory_em,对二甲苯,对二甲苯,exchange_proxy,daily,True,吨,东方财富期货库存，PX交易所库存 proxy
+000301.SZ,东方盛虹,炼油化工,B,涤纶长丝,0.3,akshare_futures_inventory_em,短纤,短纤,proxy,daily,False,吨,短纤库存不是涤纶长丝库存，只作弱代理，默认不启用
+000301.SZ,东方盛虹,炼油化工,B,炼化价差,0.1,weekly_report_required,,炼化价差,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+000422.SZ,湖北宜化,煤化工,B,PVC,0.35,akshare_futures_inventory_em,PVC,PVC,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+000422.SZ,湖北宜化,煤化工,B,尿素,0.35,akshare_futures_inventory_em,尿素,尿素,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+000422.SZ,湖北宜化,煤化工,B,烧碱,0.3,akshare_futures_inventory_em,烧碱,烧碱,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+000683.SZ,远兴能源,纯碱,B,小苏打,0.1,weekly_report_required,,小苏打,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+000683.SZ,远兴能源,纯碱,B,尿素,0.25,akshare_futures_inventory_em,尿素,尿素,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+000683.SZ,远兴能源,纯碱,B,甲醇,0.1,akshare_futures_inventory_em,甲醇,甲醇,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+000683.SZ,远兴能源,纯碱,B,纯碱,0.55,akshare_futures_inventory_em,纯碱,纯碱,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+000703.SZ,恒逸石化,炼油化工,B,PTA,0.35,akshare_futures_inventory_em,PTA,PTA,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+000703.SZ,恒逸石化,炼油化工,B,PX,0.2,akshare_futures_inventory_em,对二甲苯,对二甲苯,exchange_proxy,daily,True,吨,东方财富期货库存，PX交易所库存 proxy
+000703.SZ,恒逸石化,炼油化工,B,涤纶长丝,0.3,akshare_futures_inventory_em,短纤,短纤,proxy,daily,False,吨,短纤库存不是涤纶长丝库存，只作弱代理，默认不启用
+000703.SZ,恒逸石化,炼油化工,B,炼化价差,0.15,weekly_report_required,,炼化价差,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+000822.SZ,山东海化,纯碱,B,PVC,0.1,akshare_futures_inventory_em,PVC,PVC,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+000822.SZ,山东海化,纯碱,B,溴素,0.1,weekly_report_required,,溴素,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+000822.SZ,山东海化,纯碱,B,烧碱,0.15,akshare_futures_inventory_em,烧碱,烧碱,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+000822.SZ,山东海化,纯碱,B,纯碱,0.65,akshare_futures_inventory_em,纯碱,纯碱,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+000830.SZ,鲁西化工,煤化工,B,双氧水,0.2,weekly_report_required,,双氧水,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+000830.SZ,鲁西化工,煤化工,B,尿素,0.3,akshare_futures_inventory_em,尿素,尿素,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+000830.SZ,鲁西化工,煤化工,B,己内酰胺,0.3,weekly_report_required,,己内酰胺,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+000830.SZ,鲁西化工,煤化工,B,甲醇,0.2,akshare_futures_inventory_em,甲醇,甲醇,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+002092.SZ,中泰化学,氯碱,B,PVC,0.6,akshare_futures_inventory_em,PVC,PVC,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+002092.SZ,中泰化学,氯碱,B,烧碱,0.4,akshare_futures_inventory_em,烧碱,烧碱,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+002145.SZ,中核钛白,钛白粉,B,钛白粉,0.8,weekly_report_required,,钛白粉,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+002145.SZ,中核钛白,钛白粉,B,钛精矿,0.2,weekly_report_required,,钛精矿,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+002258.SZ,利尔化学,农药,B,吡啶,0.2,weekly_report_required,,吡啶,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+002258.SZ,利尔化学,农药,B,草甘膦,0.3,weekly_report_required,,草甘膦,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+002258.SZ,利尔化学,农药,B,草铵膦,0.5,weekly_report_required,,草铵膦,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+002493.SZ,荣盛石化,炼油化工,B,PTA,0.35,akshare_futures_inventory_em,PTA,PTA,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+002493.SZ,荣盛石化,炼油化工,B,PX,0.35,akshare_futures_inventory_em,对二甲苯,对二甲苯,exchange_proxy,daily,True,吨,东方财富期货库存，PX交易所库存 proxy
+002493.SZ,荣盛石化,炼油化工,B,涤纶长丝,0.15,akshare_futures_inventory_em,短纤,短纤,proxy,daily,False,吨,短纤库存不是涤纶长丝库存，只作弱代理，默认不启用
+002493.SZ,荣盛石化,炼油化工,B,炼化价差,0.15,weekly_report_required,,炼化价差,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+002601.SZ,龙佰集团,钛白粉,B,钛白粉,0.7,weekly_report_required,,钛白粉,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+002601.SZ,龙佰集团,钛白粉,B,钛精矿,0.3,weekly_report_required,,钛精矿,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+002895.SZ,川恒股份,磷化工,B,磷矿石,0.25,weekly_report_required,,磷矿石,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+002895.SZ,川恒股份,磷化工,B,磷酸一铵,0.4,weekly_report_required,,磷酸一铵,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+002895.SZ,川恒股份,磷化工,B,磷酸二氢钙,0.25,weekly_report_required,,磷酸二氢钙,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+002895.SZ,川恒股份,磷化工,B,磷酸铁,0.1,weekly_report_required,,磷酸铁,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600075.SH,新疆天业,氯碱,B,PVC,0.65,akshare_futures_inventory_em,PVC,PVC,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+600075.SH,新疆天业,氯碱,B,烧碱,0.25,akshare_futures_inventory_em,烧碱,烧碱,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+600075.SH,新疆天业,氯碱,B,电石,0.1,weekly_report_required,,电石,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600096.SH,云天化,磷化工,B,尿素,0.3,akshare_futures_inventory_em,尿素,尿素,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+600096.SH,云天化,磷化工,B,磷酸二铵,0.4,weekly_report_required,,磷酸二铵,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600096.SH,云天化,磷化工,B,黄磷,0.3,weekly_report_required,,黄磷,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600141.SH,兴发集团,磷化工,B,磷酸一铵,0.3,weekly_report_required,,磷酸一铵,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600141.SH,兴发集团,磷化工,B,草甘膦,0.3,weekly_report_required,,草甘膦,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600141.SH,兴发集团,磷化工,B,黄磷,0.4,weekly_report_required,,黄磷,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600160.SH,巨化股份,氟化工,B,R125,0.3,weekly_report_required,,R125,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600160.SH,巨化股份,氟化工,B,R134a,0.3,weekly_report_required,,R134a,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600160.SH,巨化股份,氟化工,B,R32,0.4,weekly_report_required,,R32,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600230.SH,沧州大化,聚氨酯,B,DNT,0.1,weekly_report_required,,DNT,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600230.SH,沧州大化,聚氨酯,B,TDI,0.55,weekly_report_required,,TDI,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600230.SH,沧州大化,聚氨酯,B,尿素,0.25,akshare_futures_inventory_em,尿素,尿素,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+600230.SH,沧州大化,聚氨酯,B,烧碱,0.1,akshare_futures_inventory_em,烧碱,烧碱,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+600309.SH,万华化学,聚氨酯,B,MDI,0.6,weekly_report_required,,MDI,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600309.SH,万华化学,聚氨酯,B,TDI,0.2,weekly_report_required,,TDI,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600309.SH,万华化学,聚氨酯,B,苯胺,0.2,weekly_report_required,,苯胺,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600346.SH,恒力石化,炼油化工,B,PTA,0.3,akshare_futures_inventory_em,PTA,PTA,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+600346.SH,恒力石化,炼油化工,B,PX,0.25,akshare_futures_inventory_em,对二甲苯,对二甲苯,exchange_proxy,daily,True,吨,东方财富期货库存，PX交易所库存 proxy
+600346.SH,恒力石化,炼油化工,B,涤纶长丝,0.25,akshare_futures_inventory_em,短纤,短纤,proxy,daily,False,吨,短纤库存不是涤纶长丝库存，只作弱代理，默认不启用
+600346.SH,恒力石化,炼油化工,B,炼化价差,0.2,weekly_report_required,,炼化价差,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600409.SH,三友化工,纯碱/粘胶/氯碱,B,PVC,0.2,akshare_futures_inventory_em,PVC,PVC,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+600409.SH,三友化工,纯碱/粘胶/氯碱,B,烧碱,0.15,akshare_futures_inventory_em,烧碱,烧碱,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+600409.SH,三友化工,纯碱/粘胶/氯碱,B,粘胶短纤,0.35,akshare_futures_inventory_em,短纤,短纤,proxy,daily,False,吨,短纤库存不是粘胶短纤库存，只作弱代理，默认不启用
+600409.SH,三友化工,纯碱/粘胶/氯碱,B,纯碱,0.3,akshare_futures_inventory_em,纯碱,纯碱,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+600426.SH,华鲁恒升,煤化工,B,DMF,0.3,weekly_report_required,,DMF,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600426.SH,华鲁恒升,煤化工,B,尿素,0.4,akshare_futures_inventory_em,尿素,尿素,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+600426.SH,华鲁恒升,煤化工,B,醋酸,0.3,weekly_report_required,,醋酸,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600486.SH,扬农化工,农药,B,草甘膦,0.4,weekly_report_required,,草甘膦,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600486.SH,扬农化工,农药,B,菊酯,0.3,weekly_report_required,,菊酯,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600486.SH,扬农化工,农药,B,麦草畏,0.3,weekly_report_required,,麦草畏,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600596.SH,新安股份,有机硅/农药,B,工业硅,0.15,akshare_futures_inventory_em,工业硅,工业硅,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+600596.SH,新安股份,有机硅/农药,B,有机硅DMC,0.35,akshare_futures_inventory_em,工业硅,工业硅,upstream_proxy,daily,False,吨,工业硅库存是上游 proxy，不等同 DMC 库存，默认不启用
+600596.SH,新安股份,有机硅/农药,B,煤炭,0.15,weekly_report_required,,煤炭,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600596.SH,新安股份,有机硅/农药,B,草甘膦,0.35,weekly_report_required,,草甘膦,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600618.SH,氯碱化工,氯碱,B,PVC,0.55,akshare_futures_inventory_em,PVC,PVC,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+600618.SH,氯碱化工,氯碱,B,烧碱,0.45,akshare_futures_inventory_em,烧碱,烧碱,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+600746.SH,江苏索普,醋酸/煤化工,B,ADC发泡剂,0.2,weekly_report_required,,ADC发泡剂,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600746.SH,江苏索普,醋酸/煤化工,B,醋酸,0.7,weekly_report_required,,醋酸,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600746.SH,江苏索普,醋酸/煤化工,B,醋酸乙烯,0.1,weekly_report_required,,醋酸乙烯,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600989.SH,宝丰能源,煤化工,B,焦炭,0.2,akshare_futures_inventory_em,焦炭,焦炭,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+600989.SH,宝丰能源,煤化工,B,甲醇,0.2,akshare_futures_inventory_em,甲醇,甲醇,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+600989.SH,宝丰能源,煤化工,B,聚丙烯,0.3,akshare_futures_inventory_em,聚丙烯,聚丙烯,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+600989.SH,宝丰能源,煤化工,B,聚乙烯,0.3,akshare_futures_inventory_em,塑料,塑料/聚乙烯,exchange_proxy,daily,True,吨,东方财富期货库存，L/塑料库存 proxy
+601233.SH,桐昆股份,化纤,B,PTA,0.3,akshare_futures_inventory_em,PTA,PTA,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+601233.SH,桐昆股份,化纤,B,PX,0.2,akshare_futures_inventory_em,对二甲苯,对二甲苯,exchange_proxy,daily,True,吨,东方财富期货库存，PX交易所库存 proxy
+601233.SH,桐昆股份,化纤,B,涤纶长丝,0.5,akshare_futures_inventory_em,短纤,短纤,proxy,daily,False,吨,短纤库存不是涤纶长丝库存，只作弱代理，默认不启用
+601678.SH,滨化股份,氯碱/环氧丙烷,B,三氯乙烯,0.15,weekly_report_required,,三氯乙烯,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+601678.SH,滨化股份,氯碱/环氧丙烷,B,烧碱,0.25,akshare_futures_inventory_em,烧碱,烧碱,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+601678.SH,滨化股份,氯碱/环氧丙烷,B,环氧丙烷,0.45,weekly_report_required,,环氧丙烷,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+601678.SH,滨化股份,氯碱/环氧丙烷,B,环氧氯丙烷,0.15,weekly_report_required,,环氧氯丙烷,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+603225.SH,新凤鸣,涤纶,B,PTA,0.35,akshare_futures_inventory_em,PTA,PTA,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+603225.SH,新凤鸣,涤纶,B,PX,0.1,akshare_futures_inventory_em,对二甲苯,对二甲苯,exchange_proxy,daily,True,吨,东方财富期货库存，PX交易所库存 proxy
+603225.SH,新凤鸣,涤纶,B,涤纶长丝,0.55,akshare_futures_inventory_em,短纤,短纤,proxy,daily,False,吨,短纤库存不是涤纶长丝库存，只作弱代理，默认不启用
+603260.SH,合盛硅业,工业硅/有机硅,B,多晶硅,0.15,akshare_futures_inventory_em,多晶硅,多晶硅,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+603260.SH,合盛硅业,工业硅/有机硅,B,工业硅,0.5,akshare_futures_inventory_em,工业硅,工业硅,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+603260.SH,合盛硅业,工业硅/有机硅,B,有机硅DMC,0.35,akshare_futures_inventory_em,工业硅,工业硅,upstream_proxy,daily,False,吨,工业硅库存是上游 proxy，不等同 DMC 库存，默认不启用
+603379.SH,三美股份,氟化工,B,R134a,0.3,weekly_report_required,,R134a,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+603379.SH,三美股份,氟化工,B,R32,0.4,weekly_report_required,,R32,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+603379.SH,三美股份,氟化工,B,氢氟酸,0.3,weekly_report_required,,氢氟酸,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+605020.SH,永和股份,氟化工,B,R125,0.3,weekly_report_required,,R125,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+605020.SH,永和股份,氟化工,B,R32,0.3,weekly_report_required,,R32,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+605020.SH,永和股份,氟化工,B,萤石,0.4,weekly_report_required,,萤石,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+000545.SZ,金浦钛业,钛白粉,C,钛白粉,0.8,weekly_report_required,,钛白粉,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+000545.SZ,金浦钛业,钛白粉,C,钛精矿,0.2,weekly_report_required,,钛精矿,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+000902.SZ,新洋丰,复合肥,C,复合肥,0.45,weekly_report_required,,复合肥,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+000902.SZ,新洋丰,复合肥,C,尿素,0.1,akshare_futures_inventory_em,尿素,尿素,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+000902.SZ,新洋丰,复合肥,C,磷肥,0.15,weekly_report_required,,磷肥,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+000902.SZ,新洋丰,复合肥,C,磷酸一铵,0.3,weekly_report_required,,磷酸一铵,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+002136.SZ,安纳达,钛白粉,C,磷酸铁,0.15,weekly_report_required,,磷酸铁,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+002136.SZ,安纳达,钛白粉,C,钛白粉,0.85,weekly_report_required,,钛白粉,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+002407.SZ,多氟多,氟化工,C,六氟磷酸锂,0.3,weekly_report_required,,六氟磷酸锂,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+002407.SZ,多氟多,氟化工,C,冰晶石,0.15,weekly_report_required,,冰晶石,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+002407.SZ,多氟多,氟化工,C,无水氟化铝,0.35,weekly_report_required,,无水氟化铝,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+002407.SZ,多氟多,氟化工,C,氢氟酸,0.2,weekly_report_required,,氢氟酸,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+300891.SZ,惠云钛业,钛白粉,C,钛白粉,0.85,weekly_report_required,,钛白粉,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+300891.SZ,惠云钛业,钛白粉,C,钛精矿,0.15,weekly_report_required,,钛精矿,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600378.SH,昊华科技,氟化工/高端材料,C,PTFE,0.25,weekly_report_required,,PTFE,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600378.SH,昊华科技,氟化工/高端材料,C,含氟聚合物,0.35,weekly_report_required,,含氟聚合物,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600378.SH,昊华科技,氟化工/高端材料,C,电子特气,0.2,weekly_report_required,,电子特气,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600378.SH,昊华科技,氟化工/高端材料,C,聚氨酯材料,0.2,weekly_report_required,,聚氨酯材料,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600470.SH,六国化工,磷化工,C,复合肥,0.3,weekly_report_required,,复合肥,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600470.SH,六国化工,磷化工,C,尿素,0.1,akshare_futures_inventory_em,尿素,尿素,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+600470.SH,六国化工,磷化工,C,液氨,0.1,weekly_report_required,,液氨,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600470.SH,六国化工,磷化工,C,磷酸一铵,0.05,weekly_report_required,,磷酸一铵,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600470.SH,六国化工,磷化工,C,磷酸二铵,0.45,weekly_report_required,,磷酸二铵,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600727.SH,鲁北化工,钛白粉/磷化工,C,原盐,0.15,weekly_report_required,,原盐,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600727.SH,鲁北化工,钛白粉/磷化工,C,甲烷氯化物,0.25,weekly_report_required,,甲烷氯化物,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600727.SH,鲁北化工,钛白粉/磷化工,C,磷酸一铵,0.25,weekly_report_required,,磷酸一铵,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+600727.SH,鲁北化工,钛白粉/磷化工,C,钛白粉,0.35,weekly_report_required,,钛白粉,manual_required,weekly,False,,交易所库存暂未覆盖；建议用行业周报/机构数据每周维护
+601216.SH,君正集团,氯碱,C,PVC,0.55,akshare_futures_inventory_em,PVC,PVC,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+601216.SH,君正集团,氯碱,C,烧碱,0.25,akshare_futures_inventory_em,烧碱,烧碱,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
+601216.SH,君正集团,氯碱,C,硅铁,0.2,akshare_futures_inventory_em,硅铁,硅铁,exchange_proxy,daily,True,吨,东方财富期货库存，交易所仓单/库存 proxy
