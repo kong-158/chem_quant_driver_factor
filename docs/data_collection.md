@@ -47,19 +47,31 @@ python scripts/fetch_cninfo_reports.py --report-year 2024 --start-date 20250101 
 python scripts/download_cninfo_pdfs.py --output-dir data/raw/reports/2025
 python scripts/extract_capacity_snippets.py --pdf-dir data/raw/reports/2025 --output data/raw/capacity_snippets_2025.csv
 python scripts/parse_capacity_candidates.py
+python scripts/build_product_capacity_review_pack.py
 ```
 
-上述流程会生成三类复核材料：
+上述流程会生成五类复核材料：
 
 ```text
 data/raw/capacity_candidates_2025.csv
 data/raw/capacity_candidate_summary_2025.csv
 data/raw/product_capacity_review_template_2025.csv
+data/raw/product_capacity_review_queue_2025.csv
+data/raw/product_capacity_draft_2025.csv
 ```
 
 - `capacity_candidates_2025.csv`：自动抽取的候选明细，包含页码、产品、数字、单位、上下文和置信度。
 - `capacity_candidate_summary_2025.csv`：按公司和产品汇总后的候选摘要。
-- `product_capacity_review_template_2025.csv`：人工复核模板。复核后可整理为 `data/raw/product_capacity.csv`。
+- `product_capacity_review_template_2025.csv`：按公司和产品汇总的人工复核模板。
+- `product_capacity_review_queue_2025.csv`：按 `config/driver_mapping.csv` 逐行对齐的审查队列，推荐优先审查这张表。
+- `product_capacity_draft_2025.csv`：只保留 `proposed_accept` 的产能草稿，字段兼容 `product_capacity.csv`，但仍需人工确认后再用于正式研究。
+
+`product_capacity_review_queue_2025.csv` 中的 `review_status` 说明：
+
+- `proposed_accept`：候选更像公司自身产能，且置信度达到 high/medium。
+- `missing_candidate`：没有在最新年报片段中匹配到该 driver 的产能候选。
+- `needs_review_non_company_capacity`：候选可能是行业产能、资源储量、项目建设或产销量口径。
+- `needs_review_low_confidence`：候选像公司产能，但抽取质量较弱，需要看年报原文确认。
 
 ## product_capacity.csv 格式
 

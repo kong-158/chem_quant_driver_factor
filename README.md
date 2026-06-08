@@ -243,7 +243,17 @@ python scripts/fetch_cninfo_reports.py
 python scripts/download_cninfo_pdfs.py --output-dir data/raw/reports/2025
 python scripts/extract_capacity_snippets.py --pdf-dir data/raw/reports/2025 --output data/raw/capacity_snippets_2025.csv
 python scripts/parse_capacity_candidates.py
+python scripts/build_product_capacity_review_pack.py
 ```
+
+产能整理流程会生成两张重点审查表：
+
+```text
+data/raw/product_capacity_review_queue_2025.csv
+data/raw/product_capacity_draft_2025.csv
+```
+
+其中 `review_queue` 按原始 `driver_mapping.csv` 逐行对齐并标记 `review_status`；`draft` 只保留更像公司自身产能的 high/medium 候选，可作为人工复核后的 `product_capacity.csv` 起点，但不应直接视为最终真实产能。
 
 ## 12. 开源协作
 

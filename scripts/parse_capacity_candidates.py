@@ -43,7 +43,19 @@ NEGATIVE_TERMS = [
 ]
 DELIMITER_PATTERN = re.compile(r"[，,、；;。和及]")
 CAPACITY_TERMS = ["产能", "设计产能", "生产能力", "年产能", "年产"]
-COMPANY_CAPACITY_TERMS = ["主要产品产能", "主要产品的产能", "主要产品的产能情况", "设计产能", "现有产能", "公司目前拥有", "公司拥有", "截至报告期末"]
+COMPANY_CAPACITY_TERMS = [
+    "主要产品产能",
+    "主要产品的产能",
+    "主要产品的产能情况",
+    "设计产能",
+    "产能与开工情况",
+    "产能利用率",
+    "主要厂区或项目",
+    "现有产能",
+    "公司目前拥有",
+    "公司拥有",
+    "截至报告期末",
+]
 INDUSTRY_TERMS = ["行业产能", "国内", "我国", "全球", "市场", "CR10", "据百川"]
 RESOURCE_TERMS = ["保有资源", "资源储量", "储备", "矿石量", "探明"]
 PROJECT_TERMS = ["新增", "新增加", "在建", "扩建", "技改", "项目", "投产", "转让", "置换"]
@@ -120,9 +132,10 @@ def _score_candidate(
         if term in context:
             score += 4
 
-    for term in NEGATIVE_TERMS:
-        if term in context:
-            score -= 12
+    if candidate_type != "company_capacity":
+        for term in NEGATIVE_TERMS:
+            if term in context:
+                score -= 12
 
     # 产品别名出现在“公司拥有/形成/主要产品产能”附近，通常更像公司自身口径。
     if alias in context and any(term in context for term in ["公司目前拥有", "现已形成", "主要产品"]):
@@ -206,7 +219,8 @@ def _extract_for_alias(text: str, product_name: str, alias: str) -> list[dict]:
         relation_end = max(alias_match.end(), absolute_end)
         relation_text = text[relation_start:relation_end]
         near_text = text[max(relation_start - 20, 0) : min(relation_end + 20, len(text))]
-        delimiter_count = len(DELIMITER_PATTERN.findall(relation_text))
+        relation_for_delimiter = re.sub(r"(?<=\d),(?=\d{3})", "", relation_text)
+        delimiter_count = len(DELIMITER_PATTERN.findall(relation_for_delimiter))
         has_capacity_term = any(term in near_text for term in CAPACITY_TERMS)
         candidate_type = _classify_candidate(context, alias, has_capacity_term)
         score, confidence = _score_candidate(
