@@ -255,6 +255,13 @@ data/raw/product_capacity_draft_2025.csv
 
 其中 `review_queue` 按原始 `driver_mapping.csv` 逐行对齐并标记 `review_status`；`draft` 只保留更像公司自身产能的 high/medium 候选，可作为人工复核后的 `product_capacity.csv` 起点，但不应直接视为最终真实产能。
 
+仓库中同时保留了一份可直接审查的公开快照：
+
+```text
+data/review/product_capacity_review_queue_2025.csv
+data/review/product_capacity_draft_2025.csv
+```
+
 ## 12. 开源协作
 
 本项目使用 MIT License。欢迎通过 issue 或 pull request 贡献：

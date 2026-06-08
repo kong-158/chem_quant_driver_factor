@@ -31,6 +31,16 @@ def _format_raw_capacity(row: pd.Series) -> str:
     return f"{value:g}{raw_unit}"
 
 
+def _public_file_reference(value: object) -> str:
+    """将本地绝对路径转成适合提交到开源仓库的文件名引用。"""
+    if pd.isna(value) or not str(value).strip():
+        return ""
+    text = str(value)
+    if text.startswith(("http://", "https://")):
+        return text
+    return Path(text).name
+
+
 def _review_status(row: pd.Series) -> str:
     """根据候选类型和置信度给出人工复核状态。"""
     if pd.isna(row.get("capacity_wan_ton_per_year")):
@@ -201,7 +211,7 @@ def build_review_queue(
         merged["pdf_path"] = ""
     merged["source_url"] = merged["pdf_url"]
     merged["source_announcement_url"] = merged["公告链接"]
-    merged["source_pdf_file"] = merged["pdf_file"].fillna(merged["pdf_path"])
+    merged["source_pdf_file"] = merged["pdf_file"].fillna(merged["pdf_path"]).map(_public_file_reference)
     merged["evidence_page"] = merged.get("page_number", "")
     merged["review_decision"] = ""
     merged["final_capacity"] = ""

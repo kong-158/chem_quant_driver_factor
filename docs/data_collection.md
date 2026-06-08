@@ -66,6 +66,13 @@ data/raw/product_capacity_draft_2025.csv
 - `product_capacity_review_queue_2025.csv`：按 `config/driver_mapping.csv` 逐行对齐的审查队列，推荐优先审查这张表。
 - `product_capacity_draft_2025.csv`：只保留 `proposed_accept` 的产能草稿，字段兼容 `product_capacity.csv`，但仍需人工确认后再用于正式研究。
 
+为了方便 GitHub 上直接审查，当前仓库还提交了一份公开快照：
+
+```text
+data/review/product_capacity_review_queue_2025.csv
+data/review/product_capacity_draft_2025.csv
+```
+
 `product_capacity_review_queue_2025.csv` 中的 `review_status` 说明：
 
 - `proposed_accept`：候选更像公司自身产能，且置信度达到 high/medium。
